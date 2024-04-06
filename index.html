@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Chat-Bot</title>
+  <link rel="icon" href="bot.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="acknowledgment">
+    <h1>Welcome to ChatBot</h1>
+    <p>Please take a moment to review and agree to our Terms of Service before proceeding:</p>
+    <ul>
+      <li><h5>Privacy: We respect your privacy and protect your personal information. Your data is securely stored and never shared with third parties.</li>
+      <li><h5>Medical Disclaimer: Our chatbot provides general health information and advice, but it's not a substitute for professional medical consultation. Always consult a healthcare professional for personalized advice.</li>
+      <li><h5>User Conduct: Please communicate respectfully and responsibly while using our chatbot. Any misuse or abusive behavior will not be tolerated.</li>
+      <li><h5>Data Security: We take your data security seriously and implement strict measures to safeguard your information from unauthorized access or disclosure.</li>
+      <li><h5>Accuracy: While we strive for accuracy, we cannot guarantee the completeness or reliability of the information provided by the chatbot.</li>
+      <li><h5>Changes to Terms: We may update these terms from time to time. By continuing to use the chatbot, you agree to the latest version of the terms.</li>
+        <!-- Add your terms here -->
+    </ul>
+    <button id="accept-btn">I Agree</button>
+  </div>
+
+  <!-- Main page content -->
+  <div id="main-content" style="display: none;">
+    <!-- Your main page content goes here -->
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded"></span>
+
+
+      <span class="material-symbols-outlined"></span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined"></span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">Dr.</span>
+          <p>Welcome to Dr. Know It All, your trusted medical advisor. 👋<br>How can I assist you with your health concerns or inquiries today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
